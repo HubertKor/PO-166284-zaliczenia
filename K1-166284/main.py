@@ -11,3 +11,6 @@ print(v_2)
 
 c_1 = Car("xyz",2,2011,2341,"zyz",2)
 print(c_1)
+c_2 = Car("xyz",2,2011,2341,"zyz",2)
+print(c_2)
+c_1.__eq__(c_2)
