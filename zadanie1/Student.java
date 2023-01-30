@@ -2,7 +2,7 @@ package zadanie1;
 
 import java.util.*;
 
-public class Student extends Person implements Cloneable{
+public class Student extends Person implements Cloneable,Comparator<Student>{
     private final int id;
     private Date dateOfStart = null;
 
@@ -28,5 +28,13 @@ public class Student extends Person implements Cloneable{
         return cloned;
     }
 
-
+    @Override
+    public int compare(Student o1, Student o2) {
+        int studentCompare = o1.compare(o1,o2);
+        if(studentCompare != 0){
+            return studentCompare;
+        }else {
+            return -1;
+        }
+    }
 }
