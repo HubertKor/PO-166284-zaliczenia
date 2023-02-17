@@ -49,9 +49,10 @@ public class Java extends ProgrammingLanguage implements Cloneable,Comparable<Ja
 
     @Override
     public int compare(Java o1, Java o2) {
-        int result = o2.dateOfStart.compareTo(o1.dateOfStart);
+        int result = o1.dateTheLatestRelease.compareTo(o2.dateTheLatestRelease);
         if (result == 0){
-            return 
+            return 0;
         }
+        return result;
     }
 }
